@@ -35,3 +35,12 @@
 .productWrapper p{
     text-align: center;
 }
+
+.lighttheme {
+    background-color: white;
+    color: #191923;
+}
+.darktheme {
+    background-color: #191923;
+    color: white;
+}

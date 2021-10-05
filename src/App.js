@@ -16,9 +16,11 @@ function App() {
 		description: "The Chocolate Chip Cookie is cooked...........1",
 	});
 
+  const [theme, setTheme] = useState("lighttheme")
+
 	return (
-		<div>
-			<Home />
+		<div className={theme}>
+			<Home setTheme={setTheme} theme={theme}/>
 			<ProductList setCookie={setCookie} />
 			<Details cookie={cookie} />
 		</div>
