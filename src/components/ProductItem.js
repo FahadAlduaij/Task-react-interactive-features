@@ -1,15 +1,16 @@
-
-
 const ProductItem = (props) => {
-  const product = props.product;
+	const product = props.product;
 
-  return (
-    <div className="productWrapper" onClick={() => props.setCookie(product)}  >
-      <img alt={product.name} src={product.image} />
-      <p>{product.name}</p>
-      <p className="product-price">{product.price} KD</p>
-    </div>
-  );
+	return (
+		<div className="productWrapper" onClick={() => props.setCookie(product)}>
+			<img alt={product.name} src={product.image} />
+			<p>{product.name}</p>
+			<p className="product-price">{product.price} KD</p>
+			<button className="delete-btn" onClick={() => props.setDelete(product)}>
+				Delete
+			</button>
+		</div>
+	);
 };
 
 export default ProductItem;

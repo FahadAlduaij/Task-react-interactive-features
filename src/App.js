@@ -17,11 +17,12 @@ function App() {
 	});
 
   const [theme, setTheme] = useState("lighttheme")
+  const [deletebtn, setDeletebtn] = useState("")
 
 	return (
 		<div className={theme}>
 			<Home setTheme={setTheme} theme={theme}/>
-			<ProductList setCookie={setCookie} />
+			<ProductList setCookie={setCookie} setDelete={setDeletebtn} />
 			<Details cookie={cookie} />
 		</div>
 	);

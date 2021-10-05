@@ -12,7 +12,9 @@ const ProductList = (props) => {
 		.filter((search) =>
 			search.name.toLowerCase().includes(query.toLocaleLowerCase())
 		)
-		.map((product) => <ProductItem product={product} setCookie={props.setCookie} key={product.id} />);
+		.map((product) => <ProductItem product={product} setDelete={props.setDeletebtn} setCookie={props.setCookie} key={product.id} />);
+
+	const deletebtn = products.filter(filter => filter.id)
 
 	return (
 		<>

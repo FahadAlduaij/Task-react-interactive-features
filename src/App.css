@@ -1,46 +1,78 @@
-
-
-.home{
-    text-align: center;
-
+.home {
+	text-align: center;
 }
-.home img{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.home img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
-
 
 .searchBar {
-    padding: 0.5rem;
-    margin: 1rem auto;
-    display: block;
-    width: 40%;
+	padding: 0.5rem;
+	margin: 1rem auto;
+	display: block;
+	width: 40%;
 }
 
 .listWrapper {
-    align-items: center;
-  justify-content: center;
-  display: flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .productWrapper {
-    margin: 20px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
 }
-.productWrapper img{
-    width: 200px;
-    height: 200px;
+.productWrapper img {
+	width: 200px;
+	height: 200px;
 }
-.productWrapper p{
-    text-align: center;
+.productWrapper p {
+	text-align: center;
+}
+
+.delete-btn {
+	background-color: red;
+	color: white;
+	border: 0;
+	width: 80px;
+	height: 30px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.delete-btn:hover {
+	background-color: rgb(185, 20, 20);
 }
 
 .lighttheme {
-    background-color: white;
-    color: #191923;
+	background-color: white;
+	color: #191923;
+	height: 100vh;
+	width: 100vw;
 }
 .darktheme {
-    background-color: #191923;
-    color: white;
+	background-color: #191923;
+	color: white;
+	height: 100vh;
+	width: 100vw;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.details img {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
 }
